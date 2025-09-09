@@ -42,8 +42,12 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: Run tests
+        run: npm install
+        working-directory: test_workflow
+      
+      - name: Run tests
         run: npm test
-        working-directory: ${{ github.workspace }}/
+        working-directory: test_workflow
 
       - name: Debug message
         if: env.DEBUG == 'true'
@@ -69,8 +73,12 @@ jobs:
         run: echo "This is not the main branch."
 
       - name: Run tests
+        run: npm install
+        working-directory: test_workflow
+      
+      - name: Run tests
         run: npm test
-        working-directory: ${{ github.workspace }}/
+        working-directory: test_workflow
 
       - name: Debug message
         if: env.DEBUG == 'true'
