@@ -43,6 +43,7 @@ jobs:
 
       - name: Run tests
         run: npm test
+        working-directory: ${{ github.workspace }}/
 
       - name: Debug message
         if: env.DEBUG == 'true'
@@ -69,6 +70,7 @@ jobs:
 
       - name: Run tests
         run: npm test
+        working-directory: ${{ github.workspace }}/
 
       - name: Debug message
         if: env.DEBUG == 'true'
