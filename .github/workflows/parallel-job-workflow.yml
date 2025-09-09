@@ -43,11 +43,11 @@ jobs:
 
       - name: Run tests
         run: npm install
-        working-directory: test_workflow
+
       
       - name: Run tests
         run: npm test
-        working-directory: test_workflow
+
 
       - name: Debug message
         if: env.DEBUG == 'true'
@@ -74,11 +74,11 @@ jobs:
 
       - name: Run tests
         run: npm install
-        working-directory: test_workflow
+
       
       - name: Run tests
         run: npm test
-        working-directory: test_workflow
+
 
       - name: Debug message
         if: env.DEBUG == 'true'
